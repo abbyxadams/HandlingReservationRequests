@@ -1,0 +1,21 @@
+{
+  "name": "HandlingReservationRequests",
+  "version": "1.0.0",
+  "description": "This is a mini group project where we build a web app for handling reservations at a restaurant.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbyxadams/HandlingReservationRequests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbyxadams/HandlingReservationRequests/issues"
+  },
+  "homepage": "https://github.com/abbyxadams/HandlingReservationRequests#readme"
+}
