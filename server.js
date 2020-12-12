@@ -38,6 +38,25 @@ const tables = [
 
 
 
+const waitList = [
+
+    { 
+        name: "luis",
+        phoneNumber: "305305305",
+        email:"abby@a.com",
+        uniqueId: "127eh",
+    }
+
+    
+
+
+
+]
+
+
+
+
+
 
 
 // Routes
@@ -50,16 +69,27 @@ app.get("/", function(req, res) {
 
 
 //route for page 2 "tables and waiting list"
-  app.get("/api/tables", function(req, res) {
+  app.get("/tables", function(req, res) {
     res.sendFile(path.join(__dirname, "page2.html"));
   });
   
 //route for page 3 "the form"
-  app.get("/api/form", function(req, res) {
+  app.get("/form", function(req, res) {
     res.sendFile(path.join(__dirname, "page3.html"));
   });
 
 
+
+//returns the tables info (tables api)
+  app.get("/api/tables", function(req, res) {
+      return res.json(tables);
+  });
+
+
+//returns the waitlist info (waitlist api)
+  app.get("/api/waitlist", function(req, res) {
+    return res.json(waitList);
+});
 
 
 
@@ -69,7 +99,7 @@ app.get("/", function(req, res) {
 
 app.listen (PORT, function () {
 
-    console.log("app listening on PORT" + PORT);
+    console.log("App listening on http://localhost:" + PORT);
 })
 
 
